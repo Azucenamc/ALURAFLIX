@@ -1,42 +1,38 @@
 import styled from "styled-components";
 
 export const CardContainer = styled.div`
-  position: relative;
-  width: 18.75rem;
-  background-color: #fff;
-  border-radius: 0.5rem;
-  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
-  overflow: hidden;
-  transition: transform 0.3s;
-
-  &:hover {
-    transform: scale(1.05);
-  }
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: #fff;
+  border: 1px solid #ccc;
+  padding: 1rem;
+  border-radius: 8px;
+  margin: 1rem;
 `;
 
 export const CardImage = styled.img`
   width: 100%;
   height: auto;
+  cursor: pointer;
+  border-radius: 8px;
 `;
 
 export const CardActions = styled.div`
-  position: absolute;
-  bottom: 0;
-  width: 100%;
   display: flex;
-  justify-content: space-between;
-  padding: 0.5rem;
-  background: rgba(0, 0, 0, 0.7);
+  justify-content: space-around;
+  width: 100%;
+  margin-top: 1rem;
 `;
 
 export const IconButton = styled.button`
   background: none;
   border: none;
-  color: #fff;
   cursor: pointer;
-  font-size: 1.25rem;
+  font-size: 1.5rem;
+  color: #333;
 
   &:hover {
-    color: #2271d1;
+    color: #007bff;
   }
 `;

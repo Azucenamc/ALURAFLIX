@@ -59,7 +59,7 @@ const NewVideo = () => {
       <Input
         type="text"
         name="categoria"
-        placeholder="Categoria"
+        placeholder="Categoría"
         value={formData.categoria}
         onChange={handleChange}
         required
@@ -67,7 +67,7 @@ const NewVideo = () => {
       <Input
         type="text"
         name="img"
-        placeholder="URL da Imagem"
+        placeholder="URL de la Imagen"
         value={formData.img}
         onChange={handleChange}
         required
@@ -75,13 +75,13 @@ const NewVideo = () => {
       <Input
         type="text"
         name="video"
-        placeholder="URL do Vídeo"
+        placeholder="URL del Vídeo"
         value={formData.video}
         onChange={handleChange}
         required
       />
       <Textarea
-        name="Descripción"
+        name="descricao"
         placeholder="Descripción"
         value={formData.descricao}
         onChange={handleChange}
@@ -89,7 +89,7 @@ const NewVideo = () => {
       />
       <Button type="submit">Guardar</Button>
       <Button type="button" onClick={handleReset}>
-        Limpar
+        Limpiar
       </Button>
     </FormContainer>
   );

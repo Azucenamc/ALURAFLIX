@@ -9,14 +9,8 @@ export const BannerContainer = styled.div`
 export const BannerVideo = styled.video`
   width: 100%;
   height: 100%;
-  object-fit: cover; 
-  filter: brightness(0.5); 
-`;
-
-export const BannerImg = styled.img`
-  width: 600px;
-  border-radius: 15px;
-  box-shadow: 0px 0px 0.75rem 0.25rem #2271d1;
+  object-fit: cover; /* Para que el video cubra completamente el área */
+  filter: brightness(0.5); /* Mantener el brillo reducido como el fondo */
 `;
 
 export const BannerContent = styled.div`
@@ -43,4 +37,10 @@ export const BannerTitle = styled.h1`
 export const BannerDescription = styled.p`
   font-size: 1.2rem;
   margin-top: 1rem;
+`;
+
+export const BannerImg = styled.img`
+  width: 600px;
+  border-radius: 15px;
+  box-shadow: 0px 0px 0.75rem 0.25rem #2271d1;
 `;

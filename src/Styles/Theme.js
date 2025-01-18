@@ -45,7 +45,7 @@ const theme = {
     xl: "2rem",
   },
 
-  // Bordes y sombras para un diseño moderno y limpio
+  
   borders: {
     radius: "8px",
     thickness: "2px",

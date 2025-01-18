@@ -18,12 +18,14 @@ export const VideoProvider = ({ children }) => {
 
   useEffect(() => {
     const fetchVideos = async () => {
+      setLoading(true);
       try {
         const videoData = await getVideos();
+        console.log("Videos recibidos: ", videoData); // Verifica los datos aquí
         setVideos(videoData);
         setLoading(false);
       } catch (error) {
-        console.error("Error ao buscar videos", error);
+        console.error("Error al buscar videos", error);
         setLoading(false);
       }
     };
@@ -46,7 +48,7 @@ export const VideoProvider = ({ children }) => {
         prevVideos.filter((video) => video.id !== videoId)
       );
     } catch (error) {
-      console.error("Error al agregar vídeo", error);
+      console.error("Error al eliminar vídeo", error);
     }
   };
 
@@ -59,7 +61,7 @@ export const VideoProvider = ({ children }) => {
         )
       );
     } catch (error) {
-      console.error("Error al agregar vídeo", error);
+      console.error("Error al actualizar vídeo", error);
     }
   };
 
