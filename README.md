@@ -1,6 +1,6 @@
 # Aluraflix
+![ALURAFLIX PAGE](https://github.com/Azucenamc/ALURAFLIX/blob/main/ALURAFLIX%20PAGE.png?raw=true)
 
-![Aluraflix]()
 
 Aluraflix es una aplicación de catálogo de videos inspirada en Netflix, diseñada para administrar y visualizar videos organizados por categorías. Este proyecto es parte de un desafío del programa Oracle Next Education (ONE).
 
@@ -21,7 +21,6 @@ Aluraflix es una aplicación de catálogo de videos inspirada en Netflix, diseñ
 - **React Icons**: Iconos para botones de edición y eliminación.
 - **Styled-components**: Estilización de componentes.
 - **MockAPI**: Simulación de una API REST.
-- **React Router**: Navegación en la aplicación (si corresponde).
 
 ---
 
